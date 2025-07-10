@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import {
   Button,
+  Card,
   Container,
   Typography,
   Box,
@@ -34,7 +35,16 @@ export default function Review({ name, rating, message }) {
           </Step>
         ))}
       </Stepper>
-      <Box sx={{ mt: 4 }}>
+      <Card
+        sx={{
+          padding: 4,
+          borderRadius: 2,
+          boxShadow: 4,
+          maxWidth: 300,
+          margin: "0 auto",
+          mt: 10,
+        }}
+      >
         <Typography variant="h5">Review Your Feedback</Typography>
         <Typography sx={{ mt: 2 }}>
           <strong>Name:</strong> {name}
@@ -53,7 +63,7 @@ export default function Review({ name, rating, message }) {
             Submit
           </Button>
         </Box>
-      </Box>
+      </Card>
     </Container>
   );
 }

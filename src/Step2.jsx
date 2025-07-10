@@ -37,6 +37,7 @@ export default function Step2({ rating, setRating }) {
           value={rating}
           onChange={(e, newValue) => setRating(newValue)}
           sx={{ mt: 2 }}
+          size="large"
         />
         <Box sx={{ mt: 2 }}>
           <Button onClick={() => navigate("/step/1")} sx={{ mr: 2 }}>
